@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0620"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "621A5FA81AC95228006C0AEF"
+               BuildableName = "WatchKit App.app"
+               BlueprintName = "WatchKit App"
+               ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "621A5F5F1AC951C6006C0AEF"
+               BuildableName = "CCHDarwinNotificationCenter Example.app"
+               BlueprintName = "CCHDarwinNotificationCenter Example"
+               ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "621A5F9E1AC95228006C0AEF"
+               BuildableName = "WatchKit Extension.appex"
+               BlueprintName = "WatchKit Extension"
+               ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "621A5FA81AC95228006C0AEF"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
+            ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/CCHDarwinNotificationCenter Example">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "621A5FA81AC95228006C0AEF"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
+            ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "621A5FA81AC95228006C0AEF"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
+            ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/CCHDarwinNotificationCenter Example">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "621A5FA81AC95228006C0AEF"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
+            ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "621A5FA81AC95228006C0AEF"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
+            ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

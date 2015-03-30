@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		621A5F661AC951C6006C0AEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A5F651AC951C6006C0AEF /* AppDelegate.swift */; };
+		621A5F681AC951C6006C0AEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A5F671AC951C6006C0AEF /* ViewController.swift */; };
+		621A5F6B1AC951C6006C0AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621A5F691AC951C6006C0AEF /* Main.storyboard */; };
+		621A5F6D1AC951C6006C0AEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621A5F6C1AC951C6006C0AEF /* Images.xcassets */; };
+		621A5F701AC951C6006C0AEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621A5F6E1AC951C6006C0AEF /* LaunchScreen.xib */; };
+		621A5F7C1AC951C6006C0AEF /* CCHDarwinNotificationCenter_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A5F7B1AC951C6006C0AEF /* CCHDarwinNotificationCenter_ExampleTests.swift */; };
+		621A5F8C1AC95215006C0AEF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A5F8B1AC95215006C0AEF /* NotificationCenter.framework */; };
+		621A5F911AC95215006C0AEF /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A5F901AC95215006C0AEF /* TodayViewController.swift */; };
+		621A5F931AC95215006C0AEF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621A5F921AC95215006C0AEF /* MainInterface.storyboard */; };
+		621A5F961AC95215006C0AEF /* Today Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 621A5F891AC95215006C0AEF /* Today Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		621A5FA41AC95228006C0AEF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A5FA31AC95228006C0AEF /* InterfaceController.swift */; };
+		621A5FA61AC95228006C0AEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621A5FA51AC95228006C0AEF /* Images.xcassets */; };
+		621A5FAA1AC95228006C0AEF /* WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 621A5FA91AC95228006C0AEF /* WatchKit App.app */; };
+		621A5FB21AC95228006C0AEF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621A5FB01AC95228006C0AEF /* Interface.storyboard */; };
+		621A5FB41AC95228006C0AEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621A5FB31AC95228006C0AEF /* Images.xcassets */; };
+		621A5FB71AC95228006C0AEF /* WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 621A5F9F1AC95228006C0AEF /* WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6281C63B1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6281C63A1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		621A5F761AC951C6006C0AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 621A5F581AC951C6006C0AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 621A5F5F1AC951C6006C0AEF;
+			remoteInfo = "CCHDarwinNotificationCenter Example";
+		};
+		621A5F941AC95215006C0AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 621A5F581AC951C6006C0AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 621A5F881AC95215006C0AEF;
+			remoteInfo = "Today Widget";
+		};
+		621A5FAB1AC95228006C0AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 621A5F581AC951C6006C0AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 621A5FA81AC95228006C0AEF;
+			remoteInfo = "CCHDarwinNotificationCenter Example WatchKit App";
+		};
+		621A5FB51AC95228006C0AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 621A5F581AC951C6006C0AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 621A5F9E1AC95228006C0AEF;
+			remoteInfo = "CCHDarwinNotificationCenter Example WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		621A5F9A1AC95215006C0AEF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				621A5F961AC95215006C0AEF /* Today Widget.appex in Embed App Extensions */,
+				621A5FB71AC95228006C0AEF /* WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		621A5F601AC951C6006C0AEF /* CCHDarwinNotificationCenter Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CCHDarwinNotificationCenter Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621A5F641AC951C6006C0AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621A5F651AC951C6006C0AEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		621A5F671AC951C6006C0AEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		621A5F6A1AC951C6006C0AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		621A5F6C1AC951C6006C0AEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		621A5F6F1AC951C6006C0AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		621A5F751AC951C6006C0AEF /* CCHDarwinNotificationCenter ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CCHDarwinNotificationCenter ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621A5F7A1AC951C6006C0AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621A5F7B1AC951C6006C0AEF /* CCHDarwinNotificationCenter_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHDarwinNotificationCenter_ExampleTests.swift; sourceTree = "<group>"; };
+		621A5F891AC95215006C0AEF /* Today Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Today Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621A5F8B1AC95215006C0AEF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		621A5F8F1AC95215006C0AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621A5F901AC95215006C0AEF /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		621A5F921AC95215006C0AEF /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		621A5F9F1AC95228006C0AEF /* WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621A5FA21AC95228006C0AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621A5FA31AC95228006C0AEF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		621A5FA51AC95228006C0AEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		621A5FA91AC95228006C0AEF /* WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621A5FAF1AC95228006C0AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621A5FB11AC95228006C0AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		621A5FB31AC95228006C0AEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6281C6391AC95DAD00F8305F /* CCHDarwinNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHDarwinNotificationCenter.h; sourceTree = "<group>"; };
+		6281C63A1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHDarwinNotificationCenter.m; sourceTree = "<group>"; };
+		6281C63C1AC95E1E00F8305F /* CCHDarwinNotificationCenter-Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CCHDarwinNotificationCenter-Example-Bridging-Header.h"; path = "../CCHDarwinNotificationCenter-Example-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		621A5F5D1AC951C6006C0AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5F721AC951C6006C0AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5F861AC95215006C0AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621A5F8C1AC95215006C0AEF /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5F9C1AC95228006C0AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		621A5F571AC951C6006C0AEF = {
+			isa = PBXGroup;
+			children = (
+				6281C6381AC95DAD00F8305F /* CCHDarwinNotificationCenter */,
+				621A5F621AC951C6006C0AEF /* iOS App */,
+				621A5F781AC951C6006C0AEF /* iOS App Tests */,
+				621A5F8D1AC95215006C0AEF /* Today Widget */,
+				621A5FA01AC95228006C0AEF /* WatchKit Extension */,
+				621A5FAD1AC95228006C0AEF /* WatchKit App */,
+				621A5F8A1AC95215006C0AEF /* Frameworks */,
+				621A5F611AC951C6006C0AEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		621A5F611AC951C6006C0AEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				621A5F601AC951C6006C0AEF /* CCHDarwinNotificationCenter Example.app */,
+				621A5F751AC951C6006C0AEF /* CCHDarwinNotificationCenter ExampleTests.xctest */,
+				621A5F891AC95215006C0AEF /* Today Widget.appex */,
+				621A5F9F1AC95228006C0AEF /* WatchKit Extension.appex */,
+				621A5FA91AC95228006C0AEF /* WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		621A5F621AC951C6006C0AEF /* iOS App */ = {
+			isa = PBXGroup;
+			children = (
+				621A5F651AC951C6006C0AEF /* AppDelegate.swift */,
+				621A5F671AC951C6006C0AEF /* ViewController.swift */,
+				621A5F691AC951C6006C0AEF /* Main.storyboard */,
+				621A5F6C1AC951C6006C0AEF /* Images.xcassets */,
+				621A5F6E1AC951C6006C0AEF /* LaunchScreen.xib */,
+				621A5F631AC951C6006C0AEF /* Supporting Files */,
+			);
+			path = "iOS App";
+			sourceTree = "<group>";
+		};
+		621A5F631AC951C6006C0AEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				621A5F641AC951C6006C0AEF /* Info.plist */,
+				6281C63C1AC95E1E00F8305F /* CCHDarwinNotificationCenter-Example-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		621A5F781AC951C6006C0AEF /* iOS App Tests */ = {
+			isa = PBXGroup;
+			children = (
+				621A5F7B1AC951C6006C0AEF /* CCHDarwinNotificationCenter_ExampleTests.swift */,
+				621A5F791AC951C6006C0AEF /* Supporting Files */,
+			);
+			path = "iOS App Tests";
+			sourceTree = "<group>";
+		};
+		621A5F791AC951C6006C0AEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				621A5F7A1AC951C6006C0AEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		621A5F8A1AC95215006C0AEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				621A5F8B1AC95215006C0AEF /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		621A5F8D1AC95215006C0AEF /* Today Widget */ = {
+			isa = PBXGroup;
+			children = (
+				621A5F901AC95215006C0AEF /* TodayViewController.swift */,
+				621A5F921AC95215006C0AEF /* MainInterface.storyboard */,
+				621A5F8E1AC95215006C0AEF /* Supporting Files */,
+			);
+			path = "Today Widget";
+			sourceTree = "<group>";
+		};
+		621A5F8E1AC95215006C0AEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				621A5F8F1AC95215006C0AEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		621A5FA01AC95228006C0AEF /* WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				621A5FA31AC95228006C0AEF /* InterfaceController.swift */,
+				621A5FA51AC95228006C0AEF /* Images.xcassets */,
+				621A5FA11AC95228006C0AEF /* Supporting Files */,
+			);
+			path = "WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		621A5FA11AC95228006C0AEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				621A5FA21AC95228006C0AEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		621A5FAD1AC95228006C0AEF /* WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				621A5FB01AC95228006C0AEF /* Interface.storyboard */,
+				621A5FB31AC95228006C0AEF /* Images.xcassets */,
+				621A5FAE1AC95228006C0AEF /* Supporting Files */,
+			);
+			path = "WatchKit App";
+			sourceTree = "<group>";
+		};
+		621A5FAE1AC95228006C0AEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				621A5FAF1AC95228006C0AEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6281C6381AC95DAD00F8305F /* CCHDarwinNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				6281C6391AC95DAD00F8305F /* CCHDarwinNotificationCenter.h */,
+				6281C63A1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m */,
+			);
+			name = CCHDarwinNotificationCenter;
+			path = ../CCHDarwinNotificationCenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		621A5F5F1AC951C6006C0AEF /* CCHDarwinNotificationCenter Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621A5F7F1AC951C6006C0AEF /* Build configuration list for PBXNativeTarget "CCHDarwinNotificationCenter Example" */;
+			buildPhases = (
+				621A5F5C1AC951C6006C0AEF /* Sources */,
+				621A5F5D1AC951C6006C0AEF /* Frameworks */,
+				621A5F5E1AC951C6006C0AEF /* Resources */,
+				621A5F9A1AC95215006C0AEF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				621A5F951AC95215006C0AEF /* PBXTargetDependency */,
+				621A5FB61AC95228006C0AEF /* PBXTargetDependency */,
+			);
+			name = "CCHDarwinNotificationCenter Example";
+			productName = "CCHDarwinNotificationCenter Example";
+			productReference = 621A5F601AC951C6006C0AEF /* CCHDarwinNotificationCenter Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		621A5F741AC951C6006C0AEF /* CCHDarwinNotificationCenter ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621A5F821AC951C6006C0AEF /* Build configuration list for PBXNativeTarget "CCHDarwinNotificationCenter ExampleTests" */;
+			buildPhases = (
+				621A5F711AC951C6006C0AEF /* Sources */,
+				621A5F721AC951C6006C0AEF /* Frameworks */,
+				621A5F731AC951C6006C0AEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				621A5F771AC951C6006C0AEF /* PBXTargetDependency */,
+			);
+			name = "CCHDarwinNotificationCenter ExampleTests";
+			productName = "CCHDarwinNotificationCenter ExampleTests";
+			productReference = 621A5F751AC951C6006C0AEF /* CCHDarwinNotificationCenter ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		621A5F881AC95215006C0AEF /* Today Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621A5F971AC95215006C0AEF /* Build configuration list for PBXNativeTarget "Today Widget" */;
+			buildPhases = (
+				621A5F851AC95215006C0AEF /* Sources */,
+				621A5F861AC95215006C0AEF /* Frameworks */,
+				621A5F871AC95215006C0AEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Today Widget";
+			productName = "Today Widget";
+			productReference = 621A5F891AC95215006C0AEF /* Today Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		621A5F9E1AC95228006C0AEF /* WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621A5FBB1AC95228006C0AEF /* Build configuration list for PBXNativeTarget "WatchKit Extension" */;
+			buildPhases = (
+				621A5F9B1AC95228006C0AEF /* Sources */,
+				621A5F9C1AC95228006C0AEF /* Frameworks */,
+				621A5F9D1AC95228006C0AEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				621A5FAC1AC95228006C0AEF /* PBXTargetDependency */,
+			);
+			name = "WatchKit Extension";
+			productName = "CCHDarwinNotificationCenter Example WatchKit Extension";
+			productReference = 621A5F9F1AC95228006C0AEF /* WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		621A5FA81AC95228006C0AEF /* WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621A5FB81AC95228006C0AEF /* Build configuration list for PBXNativeTarget "WatchKit App" */;
+			buildPhases = (
+				621A5FA71AC95228006C0AEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchKit App";
+			productName = "CCHDarwinNotificationCenter Example WatchKit App";
+			productReference = 621A5FA91AC95228006C0AEF /* WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		621A5F581AC951C6006C0AEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Claus Höfele";
+				TargetAttributes = {
+					621A5F5F1AC951C6006C0AEF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					621A5F741AC951C6006C0AEF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 621A5F5F1AC951C6006C0AEF;
+					};
+					621A5F881AC95215006C0AEF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					621A5F9E1AC95228006C0AEF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					621A5FA81AC95228006C0AEF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 621A5F5B1AC951C6006C0AEF /* Build configuration list for PBXProject "CCHDarwinNotificationCenter Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 621A5F571AC951C6006C0AEF;
+			productRefGroup = 621A5F611AC951C6006C0AEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				621A5F5F1AC951C6006C0AEF /* CCHDarwinNotificationCenter Example */,
+				621A5F741AC951C6006C0AEF /* CCHDarwinNotificationCenter ExampleTests */,
+				621A5F881AC95215006C0AEF /* Today Widget */,
+				621A5F9E1AC95228006C0AEF /* WatchKit Extension */,
+				621A5FA81AC95228006C0AEF /* WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		621A5F5E1AC951C6006C0AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621A5F6B1AC951C6006C0AEF /* Main.storyboard in Resources */,
+				621A5F701AC951C6006C0AEF /* LaunchScreen.xib in Resources */,
+				621A5F6D1AC951C6006C0AEF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5F731AC951C6006C0AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5F871AC95215006C0AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621A5F931AC95215006C0AEF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5F9D1AC95228006C0AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621A5FAA1AC95228006C0AEF /* WatchKit App.app in Resources */,
+				621A5FA61AC95228006C0AEF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5FA71AC95228006C0AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621A5FB21AC95228006C0AEF /* Interface.storyboard in Resources */,
+				621A5FB41AC95228006C0AEF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		621A5F5C1AC951C6006C0AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6281C63B1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m in Sources */,
+				621A5F681AC951C6006C0AEF /* ViewController.swift in Sources */,
+				621A5F661AC951C6006C0AEF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5F711AC951C6006C0AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621A5F7C1AC951C6006C0AEF /* CCHDarwinNotificationCenter_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5F851AC95215006C0AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621A5F911AC95215006C0AEF /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A5F9B1AC95228006C0AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621A5FA41AC95228006C0AEF /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		621A5F771AC951C6006C0AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 621A5F5F1AC951C6006C0AEF /* CCHDarwinNotificationCenter Example */;
+			targetProxy = 621A5F761AC951C6006C0AEF /* PBXContainerItemProxy */;
+		};
+		621A5F951AC95215006C0AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 621A5F881AC95215006C0AEF /* Today Widget */;
+			targetProxy = 621A5F941AC95215006C0AEF /* PBXContainerItemProxy */;
+		};
+		621A5FAC1AC95228006C0AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 621A5FA81AC95228006C0AEF /* WatchKit App */;
+			targetProxy = 621A5FAB1AC95228006C0AEF /* PBXContainerItemProxy */;
+		};
+		621A5FB61AC95228006C0AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 621A5F9E1AC95228006C0AEF /* WatchKit Extension */;
+			targetProxy = 621A5FB51AC95228006C0AEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		621A5F691AC951C6006C0AEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621A5F6A1AC951C6006C0AEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		621A5F6E1AC951C6006C0AEF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621A5F6F1AC951C6006C0AEF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		621A5FB01AC95228006C0AEF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621A5FB11AC95228006C0AEF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		621A5F7D1AC951C6006C0AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		621A5F7E1AC951C6006C0AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		621A5F801AC951C6006C0AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "iOS App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		621A5F811AC951C6006C0AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "iOS App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		621A5F831AC951C6006C0AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS App Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCHDarwinNotificationCenter Example.app/CCHDarwinNotificationCenter Example";
+			};
+			name = Debug;
+		};
+		621A5F841AC951C6006C0AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS App Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCHDarwinNotificationCenter Example.app/CCHDarwinNotificationCenter Example";
+			};
+			name = Release;
+		};
+		621A5F981AC95215006C0AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Today Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		621A5F991AC95215006C0AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Today Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		621A5FB91AC95228006C0AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = CCHDarwinNotificationCenter_Example_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		621A5FBA1AC95228006C0AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = CCHDarwinNotificationCenter_Example_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		621A5FBC1AC95228006C0AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		621A5FBD1AC95228006C0AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		621A5F5B1AC951C6006C0AEF /* Build configuration list for PBXProject "CCHDarwinNotificationCenter Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621A5F7D1AC951C6006C0AEF /* Debug */,
+				621A5F7E1AC951C6006C0AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621A5F7F1AC951C6006C0AEF /* Build configuration list for PBXNativeTarget "CCHDarwinNotificationCenter Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621A5F801AC951C6006C0AEF /* Debug */,
+				621A5F811AC951C6006C0AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621A5F821AC951C6006C0AEF /* Build configuration list for PBXNativeTarget "CCHDarwinNotificationCenter ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621A5F831AC951C6006C0AEF /* Debug */,
+				621A5F841AC951C6006C0AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621A5F971AC95215006C0AEF /* Build configuration list for PBXNativeTarget "Today Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621A5F981AC95215006C0AEF /* Debug */,
+				621A5F991AC95215006C0AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621A5FB81AC95228006C0AEF /* Build configuration list for PBXNativeTarget "WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621A5FB91AC95228006C0AEF /* Debug */,
+				621A5FBA1AC95228006C0AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621A5FBB1AC95228006C0AEF /* Build configuration list for PBXNativeTarget "WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621A5FBC1AC95228006C0AEF /* Debug */,
+				621A5FBD1AC95228006C0AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 621A5F581AC951C6006C0AEF /* Project object */;
+}
