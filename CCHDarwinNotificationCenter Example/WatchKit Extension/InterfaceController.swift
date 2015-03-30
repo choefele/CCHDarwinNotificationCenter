@@ -12,20 +12,47 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet private weak var colorSwatchGroup: WKInterfaceGroup!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        // This turns Darwin notifications into standard NSNotifications
+        CCHDarwinNotificationCenter.startForwardingNotificationsWithIdentifier(NOTIFICATION_BLUE, fromEndpoints: .All)
+        CCHDarwinNotificationCenter.startForwardingNotificationsWithIdentifier(NOTIFICATION_ORANGE, fromEndpoints: .All)
+        CCHDarwinNotificationCenter.startForwardingNotificationsWithIdentifier(NOTIFICATION_RED, fromEndpoints: .All)
+        
+        // Observe standard NSNotifications
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "colorDidChangeToBlue", name:NOTIFICATION_BLUE, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "colorDidChangeToOrange", name:NOTIFICATION_ORANGE, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "colorDidChangeToRed", name:NOTIFICATION_RED, object: nil)
     }
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+    @IBAction func changeColorToBlue() {
+        colorSwatchGroup.setBackgroundColor(UIColor.blueColor())
+        CCHDarwinNotificationCenter.sendNotificationWithIdentifier(NOTIFICATION_BLUE)
     }
 
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+    @IBAction func changeColorToOrange() {
+        colorSwatchGroup.setBackgroundColor(UIColor.orangeColor())
+        CCHDarwinNotificationCenter.sendNotificationWithIdentifier(NOTIFICATION_ORANGE)
+    }
+
+    @IBAction func changeColorToRed() {
+        colorSwatchGroup.setBackgroundColor(UIColor.redColor())
+        CCHDarwinNotificationCenter.sendNotificationWithIdentifier(NOTIFICATION_RED)
+    }
+    
+    func colorDidChangeToBlue() {
+        colorSwatchGroup.setBackgroundColor(UIColor.blueColor())
+    }
+    
+    func colorDidChangeToOrange() {
+        colorSwatchGroup.setBackgroundColor(UIColor.orangeColor())
+    }
+    
+    func colorDidChangeToRed() {
+        colorSwatchGroup.setBackgroundColor(UIColor.redColor())
     }
 
 }

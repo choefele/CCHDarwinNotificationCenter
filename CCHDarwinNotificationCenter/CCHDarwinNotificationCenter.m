@@ -89,7 +89,7 @@ static void notificationCallback(CFNotificationCenterRef center, void *observer,
     if (endpointMask & DarwinNotificationCenterEndpointHostApp) [extensionStrings addObject:EXTENSION_STRING_HOST_APP];
     if (endpointMask & DarwinNotificationCenterEndpointWidget) [extensionStrings addObject:EXTENSION_STRING_WIDGET];
     if (endpointMask & DarwinNotificationCenterEndpointWatchKitExtension) [extensionStrings addObject:EXTENSION_STRING_WATCH_KIT_EXTENSION];
-    [extensionStrings removeObject:[self.class currentExtensionString]];
+//    [extensionStrings removeObject:[self.class currentExtensionString]];
     
     return extensionStrings;
 }

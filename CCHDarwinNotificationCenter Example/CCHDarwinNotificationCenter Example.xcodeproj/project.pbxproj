@@ -23,7 +23,12 @@
 		621A5FB21AC95228006C0AEF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621A5FB01AC95228006C0AEF /* Interface.storyboard */; };
 		621A5FB41AC95228006C0AEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621A5FB31AC95228006C0AEF /* Images.xcassets */; };
 		621A5FB71AC95228006C0AEF /* WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 621A5F9F1AC95228006C0AEF /* WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		623D3D4B1AC96EB200DFA421 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1D1411AC96A6400B11091 /* Constants.swift */; };
+		623D3D4C1AC96EB300DFA421 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1D1411AC96A6400B11091 /* Constants.swift */; };
+		623D3D4D1AC972DB00DFA421 /* CCHDarwinNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6281C63A1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m */; };
+		623D3D4E1AC972DC00DFA421 /* CCHDarwinNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6281C63A1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m */; };
 		6281C63B1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6281C63A1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m */; };
+		62F1D1421AC96A6400B11091 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1D1411AC96A6400B11091 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,7 @@
 		6281C6391AC95DAD00F8305F /* CCHDarwinNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHDarwinNotificationCenter.h; sourceTree = "<group>"; };
 		6281C63A1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHDarwinNotificationCenter.m; sourceTree = "<group>"; };
 		6281C63C1AC95E1E00F8305F /* CCHDarwinNotificationCenter-Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CCHDarwinNotificationCenter-Example-Bridging-Header.h"; path = "../CCHDarwinNotificationCenter-Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		62F1D1411AC96A6400B11091 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 			children = (
 				621A5F641AC951C6006C0AEF /* Info.plist */,
 				6281C63C1AC95E1E00F8305F /* CCHDarwinNotificationCenter-Example-Bridging-Header.h */,
+				62F1D1411AC96A6400B11091 /* Constants.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -465,6 +472,7 @@
 				6281C63B1AC95DAD00F8305F /* CCHDarwinNotificationCenter.m in Sources */,
 				621A5F681AC951C6006C0AEF /* ViewController.swift in Sources */,
 				621A5F661AC951C6006C0AEF /* AppDelegate.swift in Sources */,
+				62F1D1421AC96A6400B11091 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +488,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623D3D4E1AC972DC00DFA421 /* CCHDarwinNotificationCenter.m in Sources */,
 				621A5F911AC95215006C0AEF /* TodayViewController.swift in Sources */,
+				623D3D4C1AC96EB300DFA421 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +498,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623D3D4D1AC972DB00DFA421 /* CCHDarwinNotificationCenter.m in Sources */,
 				621A5FA41AC95228006C0AEF /* InterfaceController.swift in Sources */,
+				623D3D4B1AC96EB200DFA421 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
