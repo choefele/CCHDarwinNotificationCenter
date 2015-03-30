@@ -29,17 +29,17 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBAction func changeColorToBlue() {
         colorSwatchView.backgroundColor = UIColor.blueColor()
-        CCHDarwinNotificationCenter.sendNotificationWithIdentifier(NOTIFICATION_BLUE)
+        CCHDarwinNotificationCenter.postNotificationWithIdentifier(NOTIFICATION_BLUE)
     }
     
     @IBAction func changeColorToOrange() {
         colorSwatchView.backgroundColor = UIColor.orangeColor()
-        CCHDarwinNotificationCenter.sendNotificationWithIdentifier(NOTIFICATION_ORANGE)
+        CCHDarwinNotificationCenter.postNotificationWithIdentifier(NOTIFICATION_ORANGE)
     }
     
     @IBAction func changeColorToRed() {
         colorSwatchView.backgroundColor = UIColor.redColor()
-        CCHDarwinNotificationCenter.sendNotificationWithIdentifier(NOTIFICATION_RED)
+        CCHDarwinNotificationCenter.postNotificationWithIdentifier(NOTIFICATION_RED)
     }
     
     func colorDidChangeToBlue() {

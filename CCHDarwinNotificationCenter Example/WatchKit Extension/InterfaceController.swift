@@ -9,7 +9,6 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet private weak var colorSwatchGroup: WKInterfaceGroup!
@@ -30,17 +29,17 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func changeColorToBlue() {
         colorSwatchGroup.setBackgroundColor(UIColor.blueColor())
-        CCHDarwinNotificationCenter.sendNotificationWithIdentifier(NOTIFICATION_BLUE)
+        CCHDarwinNotificationCenter.postNotificationWithIdentifier(NOTIFICATION_BLUE)
     }
 
     @IBAction func changeColorToOrange() {
         colorSwatchGroup.setBackgroundColor(UIColor.orangeColor())
-        CCHDarwinNotificationCenter.sendNotificationWithIdentifier(NOTIFICATION_ORANGE)
+        CCHDarwinNotificationCenter.postNotificationWithIdentifier(NOTIFICATION_ORANGE)
     }
 
     @IBAction func changeColorToRed() {
         colorSwatchGroup.setBackgroundColor(UIColor.redColor())
-        CCHDarwinNotificationCenter.sendNotificationWithIdentifier(NOTIFICATION_RED)
+        CCHDarwinNotificationCenter.postNotificationWithIdentifier(NOTIFICATION_RED)
     }
     
     func colorDidChangeToBlue() {
