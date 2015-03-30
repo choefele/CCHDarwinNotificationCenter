@@ -32,7 +32,7 @@ A Darwin notification is a signal only; it can't transport any data apart from t
 Darwin notifications don’t need an app group or any other setup to work. Because the notification namespace is shared across all applications in the system, Apple recommends a reverse-DNS-style naming, for example "com.example.MyMessage".
 
 `CCHDarwinNotificationCenter` simplifies handling Darwin notifications by:
-- Providing a simple API to send Darwin notifications in one line of code
+- Providing a simple API to send Darwin notifications with one line of code
 - Converting incoming Darwin notifications into notifications that can be received with the `NSNotificationCenter` API
 - Mangling notification identifier strings to receive notifications only from specific endpoints. 
 
@@ -62,7 +62,7 @@ Then receive the converted signals via the `NSNotificationCenter` API:
 
 ## Addressing endpoints
 
-Darwin notifications have the downside of being received by the process of the sender as well. If you have an iPhone app, a Today widget and a WatchKit extension, sending a notification with the same ID makes it hard to know where the signal come from.
+Darwin notifications have the downside of being received by the process of the sender as well. If you have an iPhone app, a Today widget and a WatchKit extension, sending a notification with the same identifier makes it hard to know where the signal came from.
 
 For this reason, `CCHDarwinNotificationCenter` offers an API that appends a process specific string to the notification identifier. This appendix is then used to filter out messages you don't need. The API is as follows:
 
@@ -72,4 +72,4 @@ For this reason, `CCHDarwinNotificationCenter` offers an API that appends a proc
 	CCHDarwinNotificationCenter.postNotificationWithIdentifier("com.example.MyMessage")
 ```
 
-Note that this API does not include the word "Darwin" in its methods. The endpoint mask allows you to filter messages where `.Default` means all messages except the ones sent by you own process.
+Note that this API does not include the word "Darwin" in its methods. The endpoint mask allows you to filter messages where `.Default` means all messages except the ones sent by your own process.
