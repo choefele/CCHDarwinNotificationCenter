@@ -17,14 +17,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
         
         // This turns Darwin notifications into standard NSNotifications
-        CCHDarwinNotificationCenter.startForwardingNotificationsWithIdentifier(NOTIFICATION_BLUE, fromEndpoints: .All)
-        CCHDarwinNotificationCenter.startForwardingNotificationsWithIdentifier(NOTIFICATION_ORANGE, fromEndpoints: .All)
-        CCHDarwinNotificationCenter.startForwardingNotificationsWithIdentifier(NOTIFICATION_RED, fromEndpoints: .All)
+        CCHDarwinNotificationCenter.startForwardingNotificationsWithIdentifier(NOTIFICATION_BLUE, fromEndpoints: .Default)
+        CCHDarwinNotificationCenter.startForwardingNotificationsWithIdentifier(NOTIFICATION_ORANGE, fromEndpoints: .Default)
+        CCHDarwinNotificationCenter.startForwardingNotificationsWithIdentifier(NOTIFICATION_RED, fromEndpoints: .Default)
         
         // Observe standard NSNotifications
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "colorDidChangeToBlue", name:NOTIFICATION_BLUE, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "colorDidChangeToOrange", name:NOTIFICATION_ORANGE, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "colorDidChangeToRed", name:NOTIFICATION_RED, object: nil)
+    }
+    
+    deinit {
+        CCHDarwinNotificationCenter.stopForwardingNotificationsWithIdentifier(NOTIFICATION_BLUE, fromEndpoints: .Default)
+        CCHDarwinNotificationCenter.stopForwardingNotificationsWithIdentifier(NOTIFICATION_ORANGE, fromEndpoints: .Default)
+        CCHDarwinNotificationCenter.stopForwardingNotificationsWithIdentifier(NOTIFICATION_RED, fromEndpoints: .Default)
     }
     
     @IBAction func changeColorToBlue() {
