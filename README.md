@@ -25,7 +25,7 @@ pod "CCHDarwinNotificationCenter"
 
 ## Sending notifications across process boundaries
 
-The [Darwin notification center](https://developer.apple.com/library/mac/documentation/Darwin/Conceptual/MacOSXNotifcationOv/DarwinNotificationConcepts/DarwinNotificationConcepts.html#//apple_ref/doc/uid/TP40005947-CH5-SW1) is a system mechanism on iOS and OS X to send signals across process boundaries. It's useful to exchange information between two or more running process such as an iPhone app notifying a WatchKit Extension that new data has arrived.
+The [Darwin notification center](https://developer.apple.com/library/mac/documentation/Darwin/Conceptual/MacOSXNotifcationOv/DarwinNotificationConcepts/DarwinNotificationConcepts.html#//apple_ref/doc/uid/TP40005947-CH5-SW1) is a system mechanism on iOS and OS X to send signals across process boundaries. It's useful to exchange information between two or more running processes such as an iPhone app notifying a WatchKit Extension that new data has arrived.
 
 A Darwin notification is a signal only; it can't transport any data apart from the notification identifier. If you need to share data across processes, you can set up an [app group](https://developer.apple.com/library/prerelease/ios/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW19), which allows you to exchange data via APIs such as `NSUserDefaults` and Core Data.
 
@@ -34,7 +34,7 @@ Darwin notifications don’t need an app group or any other setup to work. Becau
 `CCHDarwinNotificationCenter` simplifies handling Darwin notifications by:
 - Providing a simple API to send Darwin notifications with one line of code
 - Converting incoming Darwin notifications into notifications that can be received with the `NSNotificationCenter` API
-- Mangling notification identifier strings to receive notifications only from specific endpoints. 
+- Mangling notification identifier strings to receive notifications from specific endpoints. 
 
 ## Simple Darwin notification API
 
