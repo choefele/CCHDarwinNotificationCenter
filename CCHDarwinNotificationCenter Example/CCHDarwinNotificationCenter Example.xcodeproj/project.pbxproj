@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62113EC41ADC10F100489478 /* Dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62113EC31ADC10F100489478 /* Dummy.m */; };
 		621A5F661AC951C6006C0AEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A5F651AC951C6006C0AEF /* AppDelegate.swift */; };
 		621A5F681AC951C6006C0AEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A5F671AC951C6006C0AEF /* ViewController.swift */; };
 		621A5F6B1AC951C6006C0AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621A5F691AC951C6006C0AEF /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		62113EC31ADC10F100489478 /* Dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dummy.m; sourceTree = "<group>"; };
 		621A5F601AC951C6006C0AEF /* CCHDarwinNotificationCenter Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CCHDarwinNotificationCenter Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		621A5F641AC951C6006C0AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		621A5F651AC951C6006C0AEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				621A5F7B1AC951C6006C0AEF /* CCHDarwinNotificationCenterTests.swift */,
 				626AD14C1AC98EF700C67D95 /* CCHDarwinNotificationCenterUtilsTests.swift */,
 				621A5F791AC951C6006C0AEF /* Supporting Files */,
+				62113EC31ADC10F100489478 /* Dummy.m */,
 			);
 			path = "iOS App Tests";
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62113EC41ADC10F100489478 /* Dummy.m in Sources */,
 				621A5F7C1AC951C6006C0AEF /* CCHDarwinNotificationCenterTests.swift in Sources */,
 				626AD14D1AC98EF700C67D95 /* CCHDarwinNotificationCenterUtilsTests.swift in Sources */,
 			);
@@ -609,7 +613,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -645,7 +648,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -658,6 +660,7 @@
 				INFOPLIST_FILE = "iOS App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -669,6 +672,7 @@
 				INFOPLIST_FILE = "iOS App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -687,6 +691,7 @@
 				INFOPLIST_FILE = "iOS App Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCHDarwinNotificationCenter Example.app/CCHDarwinNotificationCenter Example";
 			};
 			name = Debug;
@@ -702,6 +707,7 @@
 				INFOPLIST_FILE = "iOS App Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCHDarwinNotificationCenter Example.app/CCHDarwinNotificationCenter Example";
 			};
 			name = Release;
@@ -717,6 +723,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -727,6 +734,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -771,6 +779,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -781,6 +790,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHDarwinNotificationCenter-Example-Bridging-Header.h";
 			};
 			name = Release;
 		};

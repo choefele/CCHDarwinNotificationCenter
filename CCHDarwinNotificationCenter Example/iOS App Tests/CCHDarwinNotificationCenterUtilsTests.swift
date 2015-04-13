@@ -12,25 +12,25 @@ import XCTest
 class CCHDarwinNotificationCenterUtilsTests: XCTestCase {
 
     func testHostAppExtensionString() {
-        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.HostApp)
+        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.HostApp) as! [String]
         XCTAssertEqual(extensionStrings.count, 1)
-        XCTAssertTrue(extensionStrings.first === CCHDarwinNotificationCenterUtilsHostAppExtensionString)
+        XCTAssertTrue(extensionStrings.first == CCHDarwinNotificationCenterUtilsHostAppExtensionString)
     }
     
     func testTodayWidgetExtensionString() {
-        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.TodayWidget)
+        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.TodayWidget) as! [String]
         XCTAssertEqual(extensionStrings.count, 1)
-        XCTAssertTrue(extensionStrings.first === CCHDarwinNotificationCenterUtilsTodayWidgetExtensionString)
+        XCTAssertTrue(extensionStrings.first == CCHDarwinNotificationCenterUtilsTodayWidgetExtensionString)
     }
     
     func testWatchKitExtensionString() {
-        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.WatchKitExtension)
+        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.WatchKitExtension) as! [String]
         XCTAssertEqual(extensionStrings.count, 1)
-        XCTAssertTrue(extensionStrings.first === CCHDarwinNotificationCenterUtilsWatchKitExtensionString)
+        XCTAssertTrue(extensionStrings.first == CCHDarwinNotificationCenterUtilsWatchKitExtensionString)
     }
 
     func testAllExtensionStrings() {
-        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.All) as [String]
+        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.All) as! [String]
         XCTAssertEqual(extensionStrings.count, 3)
         XCTAssertTrue(contains(extensionStrings, CCHDarwinNotificationCenterUtilsHostAppExtensionString))
         XCTAssertTrue(contains(extensionStrings, CCHDarwinNotificationCenterUtilsTodayWidgetExtensionString))
@@ -38,7 +38,7 @@ class CCHDarwinNotificationCenterUtilsTests: XCTestCase {
     }
 
     func testDefaultExtensionStrings() {
-        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.Default) as [String]
+        let extensionStrings = CCHDarwinNotificationCenterUtils.extensionStringsForEndpoints(.Default) as! [String]
         XCTAssertEqual(extensionStrings.count, 2)
         XCTAssertTrue(contains(extensionStrings, CCHDarwinNotificationCenterUtilsTodayWidgetExtensionString))
         XCTAssertTrue(contains(extensionStrings, CCHDarwinNotificationCenterUtilsWatchKitExtensionString))
