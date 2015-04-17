@@ -43,13 +43,23 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "621A5F741AC951C6006C0AEF"
+               BuildableName = "CCHDarwinNotificationCenter ExampleTests.xctest"
+               BlueprintName = "CCHDarwinNotificationCenter ExampleTests"
+               ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "621A5F881AC95215006C0AEF"
-            BuildableName = "Today Widget.appex"
-            BlueprintName = "Today Widget"
+            BlueprintIdentifier = "621A5F5F1AC951C6006C0AEF"
+            BuildableName = "CCHDarwinNotificationCenter Example.app"
+            BlueprintName = "CCHDarwinNotificationCenter Example"
             ReferencedContainer = "container:CCHDarwinNotificationCenter Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
