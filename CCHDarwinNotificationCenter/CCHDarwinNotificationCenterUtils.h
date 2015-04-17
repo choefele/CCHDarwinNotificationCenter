@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "CCHDarwinNotificationCenter.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 extern NSString * const CCHDarwinNotificationCenterUtilsWatchKitExtensionString;
 extern NSString * const CCHDarwinNotificationCenterUtilsTodayWidgetExtensionString;
 extern NSString * const CCHDarwinNotificationCenterUtilsHostAppExtensionString;
@@ -27,3 +29,5 @@ extern NSString * const CCHDarwinNotificationCenterUtilsHostAppExtensionString;
 + (NSString *)unmangleIdentifier:(NSString *)mangledIdentifier;
 
 @end
+
+NS_ASSUME_NONNULL_END
