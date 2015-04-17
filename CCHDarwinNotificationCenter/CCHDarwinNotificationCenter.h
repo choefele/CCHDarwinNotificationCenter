@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_OPTIONS(NSUInteger, DarwinNotificationCenterEndpoint) {
     DarwinNotificationCenterEndpointExcludeCurrent    = (1UL << 0),
     DarwinNotificationCenterEndpointHostApp           = (1UL << 1),
@@ -32,3 +34,5 @@ typedef NS_OPTIONS(NSUInteger, DarwinNotificationCenterEndpoint) {
 + (void)stopForwardingDarwinNotificationsWithIdentifier:(NSString *)identifier;
 
 @end
+
+NS_ASSUME_NONNULL_END
