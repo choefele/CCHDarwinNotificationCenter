@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name     = 'CCHDarwinNotificationCenter'
-  spec.version  = '1.0.1'
+  spec.version  = '1.0.2'
   spec.license  = 'MIT'
   spec.summary  = 'Inter-process signaling for iOS and OS X with addressable receivers using the Darwin notification center.'
   spec.homepage = 'https://github.com/choefele/CCHDarwinNotificationCenter'
