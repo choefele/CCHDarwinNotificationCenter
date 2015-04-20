@@ -1,7 +1,7 @@
 # CCHDarwinNotificationCenter
 Inter-process signaling with addressable receivers using the Darwin notification center.
 
-[![Build Status](https://travis-ci.org/choefele/CCHDarwinNotificationCenter.png?branch=master)](https://travis-ci.org/choefele/CCHDarwinNotificationCenter)&nbsp;![Version](https://cocoapod-badges.herokuapp.com/v/CCHDarwinNotificationCenter/badge.png)&nbsp;![Platform](https://cocoapod-badges.herokuapp.com/p/CCHDarwinNotificationCenter/badge.png)
+![Version](https://cocoapod-badges.herokuapp.com/v/CCHDarwinNotificationCenter/badge.png)&nbsp;![Platform](https://cocoapod-badges.herokuapp.com/p/CCHDarwinNotificationCenter/badge.png)
 
 See [Releases](https://github.com/choefele/CCHDarwinNotificationCenter/releases) for a high-level overview of recent updates.
 
