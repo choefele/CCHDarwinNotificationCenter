@@ -11,6 +11,14 @@ Need to talk to a human? [I'm @claushoefele on Twitter](https://twitter.com/clau
 
 ## Installation
 
+### Swift Package Manager ###
+Use [Swift Package Manager](https://swift.org/package-manager/) to integrate `CCHDarwinNotificationCenter` into your project. Minimum deployment targets are 8.0 for iOS and 10.10 for OS X.
+Paste repo's address into Xcode
+```
+https://github.com/choefele/CCHDarwinNotificationCenter
+```
+
+### CocoaPods ###
 Use [CocoaPods](http://cocoapods.org) to integrate `CCHDarwinNotificationCenter` into your project. Minimum deployment targets are 7.0 for iOS and 10.9 for OS X.
 
 ```ruby
